@@ -3,7 +3,22 @@
 }
 
 body {
+    min-height: 100vh;
     margin: 0;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background: rgb(63, 94, 251);
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+}
+
+h2 {
+    color: #111;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    padding-bottom: 0;
+    margin: 10px;
 }
 
 .wrap {

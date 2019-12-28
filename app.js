@@ -19,7 +19,7 @@ const options = {
   SCALE: 1.35,
 };
 optionsInputs.forEach(input =>
-  input.addEventListener('input', function(event) {
+  input.addEventListener('input', function (event) {
     const { value, name } = event.currentTarget;
     options[name] = parseFloat(value);
   })
@@ -59,27 +59,30 @@ function drawFace(face) {
 function censor({ boundingBox: face }) {
   faceCtx.imageSmoothingEnabled = false;
   faceCtx.clearRect(0, 0, faceCanvas.width, faceCanvas.height);
+
   // draw the small face
   faceCtx.drawImage(
+
     // 5 source args
     video, // where does the source come from?
     face.x, // where do we start the source pull from?
     face.y,
     face.width,
     face.height,
+
     // 4 draw args
     face.x, // where should we start drawing the x and y?
     face.y,
     options.SIZE,
     options.SIZE
   );
-  // draw the small face back on, but scale up
 
+  // draw the small face back on, but scale up
   const width = face.width * options.SCALE;
   const height = face.height * options.SCALE;
   faceCtx.drawImage(
-    faceCanvas, // source
-    face.x, // where do we start the source pull from?
+    faceCanvas,
+    face.x,
     face.y,
     options.SIZE,
     options.SIZE,
