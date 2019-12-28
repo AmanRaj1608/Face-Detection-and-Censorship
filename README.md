@@ -12,18 +12,25 @@
 A Face Detection and Censorship App made using JavaScript.
 You can adjust censorship using controls label.
 
-In case it's not working for you ?
+--- 
+
+### In case it's not working for you ?
 That may be because I have used [FaceDetector API](https://developer.android.com/reference/android/media/FaceDetector) 
 
 Currently this only works on Chrome and you have to enable `Experimental Web platform feature` in `chrome://flags` 
 
+
 <p align="center"><img src="./err.png" width="800"></p>
 
 
-https://amanraj1608.github.io/Sketch/ 
+---
+
+### Live here https://amanraj1608.github.io/Face-Detection-and-Censorship/ 
 
 
 <p align="center"><img src="./demo.png" width="800"></p>
 
 ---
 <p align="center"> Made with ❤️ by <a href="https://github.com/amanraj1608">Aman Raj</a></p>
+
+---
